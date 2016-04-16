@@ -1,21 +1,21 @@
 <div class="modal">
   <!-- Modal header bar -->
-  <ion-header-bar class="bar-secondary">
+  <ion-header-bar class="bar-dark">
     <h1 class="title">New Exercise</h1>
-    <button class="button button-clear button-positive" ng-click="closeNewTask()">Cancel</button>
+    <button class="button button-clear button-assertive" ng-click="closeNewExercise()">Cancel</button>
   </ion-header-bar>
 
   <!-- Modal content area -->
     <ion-content>
 
-      <form ng-submit="createTask(task)">
+      <form ng-submit="createExercise(exe)">
         <div class="list">
           <label class="item item-input">
-            <input type="text" placeholder="What do you need to do?" ng-model="task.title">
+            <input type="text" placeholder="Exercise Name" ng-model="exe.title">
           </label>
         </div>
         <div class="padding">
-          <button type="submit" class="button button-block button-positive">Create Task</button>
+          <button type="submit" class="button button-block button-assertive">Create Task</button>
         </div>
       </form>
 
